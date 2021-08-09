@@ -1,0 +1,50 @@
+/* remove default margin and padding from whole document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* more on this html color code in a minute! */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to <header> */
+header {
+    padding: 20 px 35px;
+    background-color: #39a6b2;
+}
+
+/* apply styles to heading 1 */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+
+/* apply styles to hyperlinks */
+header a {
+    color: #fce138;
+    text-decoration: none;
+}
+
+/* styles the navigation box */
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+/* styles the nav box list items */
+header nav ul li {
+    display: inline;
+}
+
+/* styles the nav box list a items */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
