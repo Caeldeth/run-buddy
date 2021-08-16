@@ -57,6 +57,9 @@ header nav ul li a {
 
 /* style the footer */
 footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
@@ -64,7 +67,6 @@ footer {
 
 /* style the footer's h2 */
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
@@ -72,7 +74,6 @@ footer h2 {
 
 /* style the footer div */
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -90,23 +91,35 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
-    background-position: center;    
-    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
 }
 
 .hero-form {
     background-color:#fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 
 h3 {
@@ -143,19 +156,6 @@ h3 {
 /* Hero Styles End */
 
 /* Intro styles Start */
-.intro {
-    text-align: center;
-}
-
-/* .intro h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    display: inline-block;
-} */
 
 .intro p {
     line-height: 1.7;
@@ -163,12 +163,12 @@ h3 {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Intro Styles End */
 
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
@@ -184,10 +184,11 @@ h3 {
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .primary-border {
@@ -231,7 +232,7 @@ h3 {
 }
 
 .trainers {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .trainer img {
@@ -270,7 +271,6 @@ h3 {
 }
 
 .contact {
-    text-align: center;
     background: #024e76;
 }
 
@@ -306,4 +306,8 @@ h3 {
 
 .contact-info a{
     color: #fce138;
+}
+
+.flex-row {
+    display: flex;
 }
